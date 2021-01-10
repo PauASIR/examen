@@ -19,3 +19,7 @@ hr.hr
     background-color: lime;
     height: 4px;
 }
+table.tablacolor
+{
+    border: purple 4px solid;
+}

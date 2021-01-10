@@ -64,9 +64,10 @@
     <hr class="hr">
     <section>
         <h2>Listas</h2>
+        <h3>Lista no ordenada</h3>
         <ul>
             <li><span class="a">ul</span>: lista no ordenada</li>
-            <li>se usa <span class="a">li</span> para definir cada linea</li>
+            <li>&#60li&#62se usa <span class="a">li</span> para definir cada linea&#60/li&#62</li>
         </ul>
         <hr>
         <ul style="list-style-type: circle;">
@@ -77,6 +78,7 @@
             <li><span class="css">list-style-type: square;</span></li>
         </ul>
         <hr>
+        <h3>Lista ordenada</h3>
         <ol>
             <li><span class="a">ol</span>: lista ordenada</li>
         </ol>
@@ -98,6 +100,48 @@
         <ol start="4">
             <li><span class="css">start="4"</span>: empieza con un numero determinado</li>
         </ol>
+        <hr>
+        <h3>Lista de definición</h3>
+        <dl>
+            <dt><span class="a">dl</span></dt><dd>: lista de definición</dd>
+            <dt>se usa <span class="a">dt</span> para definir cada linea</dt><dd>y <span class="a">dd</span> para cada definición</dd>
+            <dt>&#60dt&#62esto es un ejemplo de dt&#60/dt&#62</dt><dd>&#60dd&#62y esto uno de dd&#60/dd&#62</dd>
+        </dl>
+
+    </section>
+    <hr class="hr">
+    <section>
+        <h2>Tablas</h2>
+        <table border="1">
+            <caption>el <span class="a">&#60caption&#62</span> se usa opcionalmente para poner un texto explicativo en una tabla</caption>
+            <tr>
+                <td>se usa <span class="a">&#60table&#62</span> para indicar una tabla</td>
+                <td><span class="a">&#60tr&#62</span> para definir una fila</td>
+            </tr>
+            <tr>
+                <td><span class="a">&#60td&#62</span> para definir una celda dentro de una fila</td>
+                <td>el atributo <span class="css">border="tamaño del borde"</span> se usa para poner un borde a la tabla</td>
+            </tr>
+        </table>
+        <hr>
+        <table border="1">
+            <tr>
+                <td colspan="2"><span class="css">colspan="num de celdas unidas"</span> se usa para unir celdas horizontalmente</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span class="css">rowspan="n"</span> se usa para unir celdas verticalmente </td>
+                <td>celda de ejemplo</td>
+            </tr>
+            <tr>
+                <td>celda de ejemplo</td>
+            </tr>
+        </table>
+        <hr>
+        <table class="tablacolor">
+            <tr>
+                <td>se puede cambiar de color el borde; ejemplo: <span class="css">border: purple 4px solid;</span></td>
+            </tr>
+        </table>
     </section>
     <hr class="hr">
     <section>
