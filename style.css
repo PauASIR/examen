@@ -23,3 +23,12 @@ table.tablacolor
 {
     border: purple 4px solid;
 }
+.dotted
+{
+    border: dotted;
+    padding-right: 60px;
+}
+.dashed
+{
+    border: dashed;
+}
