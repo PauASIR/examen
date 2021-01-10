@@ -7,3 +7,14 @@
 {
 background-color: orange;
 }
+img.secciones
+{
+    float: right;
+    height: 280px;
+    width: 250px;
+}
+hr.hr
+{
+    background-color: lime;
+    height: 4px;
+}

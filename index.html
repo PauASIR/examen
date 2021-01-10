@@ -13,6 +13,7 @@
     </script>
 </head>
 <body>
+    <img src="img/secciones.png" alt="imagen" class="secciones">
 <header>
     <h1>Header: define la cabezera del documento</h1>
 </header>
@@ -30,7 +31,7 @@
                 <h4>Aside: contenido secundario (generalmente anuncios)</h3>
             </aside>    
     </section>
-    <hr>
+    <hr class="hr">
     <section>
         <p><span class="a">p</span>: párrafo</p>
         <p><span class="a">hr</span>: linea de separación</p>
@@ -40,7 +41,7 @@
         <p><em><span class="a">em</span>: cursiva; en css <span class="css">oblique</em></p>
         <strong><span class="a">strong y b</span>: negrita; </strong><b>en css <span class="css">font-weight: bold</b></b>
         <p><small><span class="a">small</span>: para hacer mas pequeño un texto; en css <span class="css">font-size: smaller</span></small></p>
-        <p><span class="a">s</span><s>: texto taxado</s>; en css <span class="css">text-decoration: line-through</span></p>
+        <p><span class="a">s</span>: <s>texto taxado</s>; en css <span class="css">text-decoration: line-through</span></p>
         <p><span class="a">time</span>: para indicar una fecha <time datetime="2020-01-10">10 de enero de 2021</time></p>
         <sub><span class="a">sub</span>: subindice</sub>
         <sup><span class="a">sup</span>: superindice</sup>
@@ -54,39 +55,48 @@
         <h3>Propiedades imagenes</h3>
             <p><span class="a">float</span>: situar una imagen, por ejemplo a la izquierda: <span class="css">float: left;</span></p>
             <p><span class="a">clear</span>: hace que no haya elementos flotantes a la derecha, izquiera o ambos ejemplo: <span class="css">clear: left;</span> o <span class="css">clear: both;</span>></p>
-            <p>para centrar la imagen o bien la ponemos dentro de un texto con la propiedad <span class="css">text-align: center;</span> o con <span class="css">display: block; margin: auto;</span></p>
+            <p>para centrar la imagen o bien la ponemos dentro de un texto con la propiedad <span class="css">text-align: center;</span> o con <span class="css">display: block;</span> y <span class="css">margin: auto;</span></p>
+            <p><span class="css">height</span>: altura <span class="css">width</span>: anchura</p>
     </section>
-    <hr>
+    <hr class="hr">
     <section>
         <h2>Listas</h2>
         <ul>
             <li><span class="a">ul</span>: lista no ordenada</li>
             <li>se usa <span class="a">li</span> para definir cada linea</li>
         </ul>
+        <hr>
         <ul style="list-style-type: circle;">
             <li><span class="css">list-style-type: circle;</span></li>
         </ul>
+        <hr>
         <ul style="list-style-type: square;">
             <li><span class="css">list-style-type: square;</span></li>
         </ul>
+        <hr>
         <ol>
             <li><span class="a">ol</span>: lista ordenada</li>
         </ol>
+        <hr>
         <ol type="A">
             <li><span class="css">type="A"</span></li>
         </ol>
+        <hr>
         <ol type="I">
             <li> <span class="css">type="I"</span></li>
         </ol>
+        <hr>
         <ol reversed>
             <li><span class="css">reversed</span>: empieza por el final</li>
             <li>2</li>
             <li>3</li>
         </ol>
+        <hr>
         <ol start="4">
             <li><span class="css">start="4"</span>: empieza con un numero determinado</li>
         </ol>
     </section>
+    <hr class="hr">
     <section>
             <h3>Eventos de teclado:</h3>
     <div>
