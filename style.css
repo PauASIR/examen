@@ -13,6 +13,7 @@ img.secciones
     float: right;
     height: 280px;
     width: 250px;
+    margin-right: 100px;
 }
 hr.hr
 {
@@ -31,4 +32,24 @@ table.tablacolor
 .dashed
 {
     border: dashed;
+}
+section.seccion2
+{
+    background-color: beige;
+}
+section.seccion3
+{
+    background-color: thistle;
+}
+section.seccion4
+{
+    background-color: turquoise;
+}
+section.seccion5
+{
+    background-color: palegoldenrod;
+}
+div.seccion1
+{
+    background-color: silver;
 }
