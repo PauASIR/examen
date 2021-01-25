@@ -156,12 +156,12 @@
             <p><span class="a">&#60form action="web.php" method="get"&#62</span> sirve para hacer formularios</p>
             <p><span class="css">method:""</span>puede ser get(se envian los datos de forma visible) o post (se envian de forma no visible)</p>
 
-            <form action="web.php" method="get"></form>
+            <form action="web.php" method="get">
                 <p>Ejemplo de get<input type="text"></p>
                 <input type="submit" value="Enviar">
             </form>
 
-            <form action="web.php" method="post"></form>
+            <form action="web.php" method="post">
                 <p>Ejemplo de post<input type="text"></p>
                 <p>Nombre<input type="text" name="nom" id="nom"></p>
                 <p>Apellido <input type="text" name="cognom" id=""></p>
@@ -175,7 +175,29 @@
                 <p>mes <input type="month"></p>
                 <p>semana <input type="week"></p>
                 <p>horas <input type="time"></p>
-                <input type="submit" value="Enviar">
+            <hr>
+                <p>Selecciona los modulos</p>
+                <p>
+                    <input type="checkbox" id="modulo" value="LMI">LMI
+                    <input type="checkbox" id="modulo" value="GBD">GBD
+                    <input type="checkbox" id="modulo" value="Redes">Redes
+                </p>
+            <hr>
+                <p>Quieres recibir publicidad?</p>
+                <p><input type="checkbox" id="publi" checked>Si, me gustaria</p>
+            <hr>
+                <p>Color fav</p>
+                <p>
+                    <input type="radio" name="color" id="rojo">Rojo
+                    <input type="radio" name="color" id="rojo">Verde
+                    <input type="radio" name="color" id="rojo">Amarillo
+                    <input type="radio" name="color" id="rojo">Azul
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reset">
+                    <input type="button" name="Boton">
+                </p>
             </form>
     </section>
     <hr class="hr">
