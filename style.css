@@ -1,3 +1,7 @@
+body
+{
+    background-color: black;
+}
 .css
 {
     background-color: black;
@@ -48,6 +52,10 @@ section.seccion4
 section.seccion5
 {
     background-color: palegoldenrod;
+}
+section.seccion6
+{
+    background-color: darkseagreen;
 }
 div.seccion1
 {
