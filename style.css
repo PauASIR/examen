@@ -61,3 +61,7 @@ div.seccion1
 {
     background-color: silver;
 }
+textarea
+{
+    resize: none;
+}

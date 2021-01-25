@@ -176,27 +176,73 @@
                 <p>semana <input type="week"></p>
                 <p>horas <input type="time"></p>
             <hr>
-                <p>Selecciona los modulos</p>
+                <p><span class="css">type="checkbox"</span>: Formulario con casillas seleccionables, se puede despulsar y seleccionar mas de una</p>
                 <p>
-                    <input type="checkbox" id="modulo" value="LMI">LMI
-                    <input type="checkbox" id="modulo" value="GBD">GBD
-                    <input type="checkbox" id="modulo" value="Redes">Redes
+                    <input type="checkbox" id="form1" value="Casilla1">Casilla1
+                    <input type="checkbox" id="form1" value="Casilla2">Casilla2
+                    <input type="checkbox" id="form1" value="casilla3">Casilla3
+                </p>
+                <p>Formulario con <span class="css">checked</span>, seleccionado por defecto</p>
+                <p><input type="checkbox" id="form2" checked>Casilla seleccionada</p>
+            <hr>
+                <p>Solo se puede seleccionar una casilla (debe tener el mismo <span class="css">name</span>)</p>
+                <p><span class="css">type="radio"</span></p>
+                <p>
+                    <input type="radio" name="form3" id="opcion1">Opcion1
+                    <input type="radio" name="form3" id="opcion2">Opcion2
+                    <input type="radio" name="form3" id="opcion3">Opcion3
+                    <input type="radio" name="form3" id="opcion4">Opcion4
+                </p>
+                <p>Con <span class="css">checked</span> se puede selccionar uno por defecto</p>
+                <p>
+                    <input type="radio" name="form4" id="opcion1">Opcion1
+                    <input type="radio" name="form4" id="opcion2" checked>Opcion2 seleccionada
+                    <input type="radio" name="form4" id="opcion3">Opcion3
+                    <input type="radio" name="form4" id="opcion4">Opcion4
                 </p>
             <hr>
-                <p>Quieres recibir publicidad?</p>
-                <p><input type="checkbox" id="publi" checked>Si, me gustaria</p>
+                <p><span class="css">type="color"</span>: Se puede seleccionar un color</p>
+                <p><input type="color" name="color" id="color"></p>
             <hr>
-                <p>Color fav</p>
-                <p>
-                    <input type="radio" name="color" id="rojo">Rojo
-                    <input type="radio" name="color" id="rojo">Verde
-                    <input type="radio" name="color" id="rojo">Amarillo
-                    <input type="radio" name="color" id="rojo">Azul
-                </p>
+                <p><span class="css">type="range"</span>Puedes seleccionar un numero entre un intervalo</p>
+                <p>Selecciona un num del 5 al 10<input type="range" name="rango" id="rango" min="5" max="10"></p>
+                <p>Num seleccionado: <span id="numselec"></span></p>
+                <script>
+                    var slider = document.getElementById( "rango");
+                    var output = document.getElementById( "numselec");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function() 
+                    {
+                        output.innerHTML = this.value;
+                    }
+
+                </script>
+            <hr>
+                <p><span class="css">type="file"</span>: Selecciona un archivo</p>
+                <p><input type="file" name="archivo"></p>
+            <hr>
+                <p><span class="a">&#60textarea&#62</span> Permite al usuario escribir texto</p>
+                <p>En style css se puede poner <span class="css">resize: none;</span> para que no deje moverlo al usuario</p>
+                <textarea name="area1" id="" cols="60" rows="5"></textarea>
+            <hr>
+                <p><span class="a">&#60select&#62</span> Permite seleccionar entre varias opciones; para cada opcion se pone <span class="a">&#60option&#62</span></p>
+                <select name="seleccion" id="seleccion">
+                    <option>Opcion1</option>
+                    <option>Opcion2</option>
+                    <option>Opcion3</option>
+                </select>
+                <p>Se puede seleccionar una opcion por defecto con <span class="css">selected</span></p>
+                <select name="seleccion2" id="seleccion2">
+                    <option>Opcion1</option>
+                    <option selected>Opcion2</option>
+                    <option selected>Opcion3 (por defecto)</option>
+                </select>
+                
                 <p>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Reset">
-                    <input type="button" name="Boton">
+                    <input type="button" value="Boton">
                 </p>
             </form>
     </section>
