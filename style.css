@@ -65,3 +65,34 @@ textarea
 {
     resize: none;
 }
+section.seccion7
+{
+    background-color: tan;
+}
+div.firstchild p:first-child
+{
+    color: red;
+}
+a:link
+{
+    color: fuchsia;
+}
+a:visited
+{
+    color: green;
+}
+p.hover:hover
+{
+    background-color: black;
+    color: aquamarine;
+}
+p.active:active
+{
+    background-color: black;
+    color: aquamarine;
+}
+p.focus:focus
+{
+    background-color: black;
+    color: aquamarine;
+}
